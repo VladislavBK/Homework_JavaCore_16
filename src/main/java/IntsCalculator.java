@@ -8,31 +8,31 @@ public class IntsCalculator implements Ints {
 
     @Override
     public int sum(int arg0, int arg1) {
-        System.out.println(target.newFormula()
+         Double result = target.newFormula()
                 .addOperand(arg0)
                 .addOperand(arg1)
                 .calculate(Calculator.Operation.SUM)
-                .result);
-        return 0;
+                .result;
+        return result.intValue();
     }
 
     @Override
     public int mult(int arg0, int arg1) {
-        System.out.println(target.newFormula()
+        Double result = target.newFormula()
                 .addOperand(arg0)
                 .addOperand(arg1)
                 .calculate(Calculator.Operation.MULT)
-                .result);
-        return 0;
+                .result;
+        return result.intValue();
     }
 
     @Override
     public int pow(int a, int b) {
-        System.out.println(target.newFormula()
+        Double result = target.newFormula()
                 .addOperand(a)
                 .addOperand(b)
                 .calculate(Calculator.Operation.POW)
-                .result);
-        return 0;
+                .result;
+        return result.intValue();
     }
 }
